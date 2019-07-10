@@ -11,20 +11,51 @@
 <!-- Navigation -->
 <nav id="navbar">
     <header>CSS Documentation</header>
+<ul>
+    <li><a href="#introduction" class="nav-link">Introduction</a></li>
+    <li><a href="#CSS_Syntax" class="nav-link">CSS Syntax</a></li>
+</ul>
 </nav>
 
 <!--- Main -->
 <main id="main-doc">
 <!-- Section 1 -->
 <section class="main-section">
-<header id="What_Is_CSS">What Is CSS?</header>
+<header id="introduction">Introduction</header>
+<h2>What Is CSS?</h2>
 <p>CSS (Cascading Style Sheets) is used to style and layout web pages—for example, to alter the font, color, size and spacing of your content, split it into multiple columns, or add animations and other decorative features. </p>
 </section>
 
 <!-- Section 2 -->
 <section class="main-section">
-<header>Header</header>
+<header id="CSS_Syntax">CSS Syntax</header>
+<p>At its most basic level, CSS consists of two building blocks:
+<ul>
+    <li><strong>Properties</strong>: Human-readable identifiers that indicate which stylistic features (e.g., font, width, background color) you want to change.</li>
+    <li><strong>Values</strong>: Each specified property is given a value, which indicates how you want to change those stylistic features (e.g., what you want to change the font, width, or background color to.)</li>
+</ul>
+    A property paired with a value is called a CSS declaration. CSS declarations are put within CSS Declaration Blocks. And finally, CSS declaration blocks are paired with selectors to produce CSS Rulesets (or CSS Rules).</p>
+    <h3>CSS Declarations</h3>
+    <p>Setting CSS properties to specific values is the core function of the CSS language. The CSS engine calculates which declarations apply to every single element of a page in order to appropriately lay it out and style it. The property and value in each pair is separated by a colon.</p>
+    <p>Declarations are grouped in blocks, with each set of declarations being wrapped by an opening curly brace <code>{</code> and a closing one <code>}</code>. 
 
+        The declarations inside a declaration block must be separated by semi-colons (;), otherwise the code won't work (or will at least give unexpected results). </p>
+
+    <pre>
+        <code>h1 {
+            color: blue;
+            background-color: yellow;
+            border: 1px solid black;
+          }
+          
+          p {
+            color: red;
+          }
+          
+          p, li {
+            text-decoration: underline;
+          }</code>
+    </pre>
     </section>
 
 <!-- Section 3 -->
