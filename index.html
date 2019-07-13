@@ -14,21 +14,22 @@
 <ul>
     <li><a href="#introduction" class="nav-link">Introduction</a></li>
     <li><a href="#CSS_Syntax" class="nav-link">CSS Syntax</a></li>
+    <li><a href="#CSS_Selectors" class="nav-link">CSS Selectors</a></li>
 </ul>
 </nav>
 
 <!--- Main -->
 <main id="main-doc">
 <!-- Section 1 -->
-<section class="main-section">
-<header id="introduction">Introduction</header>
+<section class="main-section" id="introduction">
+<header>Introduction</header>
 <h2>What Is CSS?</h2>
 <p>CSS (Cascading Style Sheets) is used to style and layout web pages—for example, to alter the font, color, size and spacing of your content, split it into multiple columns, or add animations and other decorative features. </p>
 </section>
 
 <!-- Section 2 -->
-<section class="main-section">
-<header id="CSS_Syntax">CSS Syntax</header>
+<section class="main-section" id="CSS_Syntax">
+<header>CSS Syntax</header>
 <p>At its most basic level, CSS consists of two building blocks:
 <ul>
     <li><strong>Properties</strong>: Human-readable identifiers that indicate which stylistic features (e.g., font, width, background color) you want to change.</li>
@@ -37,12 +38,11 @@
     A property paired with a value is called a CSS declaration. CSS declarations are put within CSS Declaration Blocks. And finally, CSS declaration blocks are paired with selectors to produce CSS Rulesets (or CSS Rules).</p>
     <h3>CSS Declarations</h3>
     <p>Setting CSS properties to specific values is the core function of the CSS language. The CSS engine calculates which declarations apply to every single element of a page in order to appropriately lay it out and style it. The property and value in each pair is separated by a colon.</p>
-    <p>Declarations are grouped in blocks, with each set of declarations being wrapped by an opening curly brace <code>{</code> and a closing one <code>}</code>. 
-
-        The declarations inside a declaration block must be separated by semi-colons (;), otherwise the code won't work (or will at least give unexpected results). </p>
+    <p>Declarations are grouped in blocks, with each set of declarations being wrapped by an opening curly brace <code>{</code> and a closing one <code>}</code>. The declarations inside a declaration block must be separated by semi-colons (;), otherwise the code won't work (or will at least give unexpected results). </p>
 
     <pre>
-        <code>h1 {
+        <code>
+            h1 {
             color: blue;
             background-color: yellow;
             border: 1px solid black;
@@ -59,10 +59,57 @@
     </section>
 
 <!-- Section 3 -->
-<section class="main-section">
+<section class="main-section" id="CSS_Selectors">
+<header>CSS Selectors</header>
+In CSS, selectors are used to target the HTML elements on our web pages that we want to style. There are a wide variety of CSS selectors available, allowing for fine grained precision when selecting elements to style.
+<h3>Simple Selectors</h3>
+<p>Simple selectors directly match one or more elements of a document, based on the type of element, <code>class</code>, or <code>id</code>.</p>
+<pre>
+    <code>
+            /* All p elements are red */
+            p {
+            color: red;
+            }
 
+            /* All div elements are blue */
+            div {
+            color: blue;
+            }
+    </code>
+</pre>
+<h3>Class Selectors</h3>
+<p>The class selector consists of a dot, '.', followed by a class name. A class name is any value, without spaces, placed within an HTML class attribute. It is up to you to choose a name for the class. It is also noteworthy that multiple elements in a document can have the same class value, and a single element can have multiple class names separated by white space.</p>
+<pre>
+<code>
+            /* The element with the class "first" is bolded */
+            .first {
+            font-weight: bold;
+            }
 
-    </section>
+            /* All the elements with the class "done" are strikethrough */
+            .done {
+            text-decoration: line-through;
+            }
+</code>
+</pre>
+<h3>ID Selectors</h3>
+The ID selector consists of a hash/pound symbol (#), followed by the ID name of a given element. Any element can have a unique ID name set with the id attribute. It is up to you to choose an ID name. It's the most efficient way to select a single element.
+
+<strong>Important:</strong> An ID name must be unique in the document. Behaviors regarding duplicated IDs are unpredictable. For example, in some browsers, only the first instance is counted, and the rest are ignored.
+</section>
+<pre>
+    <code>
+        #polite {
+            font-family: cursive;
+            }
+            
+            #rude {
+            font-family: monospace;
+            text-transform: uppercase;
+            }
+    </code>
+
+</pre>
 <!-- Section 4 -->
 <section class="main-section">
 
