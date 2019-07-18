@@ -15,7 +15,8 @@
     <li><a href="#introduction" class="nav-link">Introduction</a></li>
     <li><a href="#CSS_Syntax" class="nav-link">CSS Syntax</a></li>
     <li><a href="#CSS_Selectors" class="nav-link">CSS Selectors</a></li>
-    <li><a href="#CSS_Box_Model" class="nav-link">The CSS Box Model</a></li>
+    <li><a href="#The_CSS_Box_Model" class="nav-link">The CSS Box Model</a></li>
+    <li><a href="#Styling_Text" class="nav-link">Styling Text</a></li>
 </ul>
 </nav>
 
@@ -141,7 +142,7 @@ The ID selector consists of a hash/pound symbol (#), followed by the ID name of 
 </pre>
 </section>
 <!-- Section 4 -->
-<section class="main-section" id="CSS_Box_Model">
+<section class="main-section" id="The_CSS_Box_Model">
 <header>The CSS Box Model</header>
 <p>The CSS box model is the foundation of layout on the Web — each element is represented as a rectangular box, with the box's content, padding, border, and margin built up around one another like the layers of an onion. As a browser renders a web page layout, it works out what styles are applied to the content of each box, how big the surrounding onion layers are, and where the boxes sit in relation to one another. Before understanding how to create CSS layouts, you need to understand the box model.</p>
 <h3>Box Properties</h3>
@@ -164,12 +165,41 @@ The ID selector consists of a hash/pound symbol (#), followed by the ID name of 
     </section>
 <!-- Section 5 -->
 <section class="main-section" id="Styling_Text">
+<header>Styling Text</header>
+<p>The CSS properties used to style text generally fall into two categories:</p>
+<ul>
+    <li>Font styles: Properties that affect the font that is applied to the text, affecting what font is applied, how big it is, whether it is bold, italic, etc.</li>
+    <li>Text layout styles: Properties that affect the spacing and other layout features of the text, allowing manipulation of, for example, the space between lines and letters, and how the text is aligned within the content box.</li>
+</ul>
+<h3>Color</h3>
+<p>The color property sets the color of the foreground content of the selected elements (which is usually the text, but can also include a couple of other things, as an underline or overline placed on text using the text-decoration property).</p>
+
+  <p><code>color</code> can accept any CSS color unit, for example:</p>
+  <pre>
+      <code>
+            p {
+                color: red;
+            }
+      </code>
+  </pre>
 
 
+  <h3>Font Family</h3>
+  <p>To set a different font on your text, you use the font-family property — this allows you to specify a font (or list of fonts) for the browser to apply to the selected elements. The browser will only apply a font if it is available on the machine the website is being accessed on; if not, it will just use a browser default font.</p>
+  <pre>
+      <code>
+        p {
+            font-family: arial;
+        }
+      </code>
+  </pre>
+<p>This would make all paragraphs on a page adopt the Arial font.</p>
     </section>
-
 </main>
-
+<footer>
+    <p>Text and code examples are from <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS" target="_window">MDN Web Docs</a>. Used here under the Creative Commons Attribution-ShareAlike license <a href="https://creativecommons.org/licenses/by-sa/2.5/">CC-BY-SA v2.5</a>. Visit <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Using_MDN_Web_Docs_content">this page</a> for additional information.</p>
+    <p>Coded by JP Luttrell</p>
+</footer>
 
 
 
