@@ -42,7 +42,7 @@
     A property paired with a value is called a CSS declaration. CSS declarations are put within CSS Declaration Blocks. And finally, CSS declaration blocks are paired with selectors to produce CSS Rulesets (or CSS Rules).</p>
     <h3>CSS Declarations</h3>
     <p>Setting CSS properties to specific values is the core function of the CSS language. The CSS engine calculates which declarations apply to every single element of a page in order to appropriately lay it out and style it. The property and value in each pair is separated by a colon.</p>
-    <p>Declarations are grouped in blocks, with each set of declarations being wrapped by an opening curly brace <code>{</code> and a closing one <code>}</code>. The declarations inside a declaration block must be separated by semi-colons (;), otherwise the code won't work (or will at least give unexpected results). </p>
+    <p>Declarations are grouped in blocks, with each set of declarations being wrapped by an opening curly brace { and a closing one } . The declarations inside a declaration block must be separated by semi-colons (;), otherwise the code won't work (or will at least give unexpected results). </p>
 
     <pre>
         <code>
@@ -51,14 +51,18 @@
             background-color: yellow;
             border: 1px solid black;
           }
-          
+        </code>
+    </pre>
+    <pre>
+        <code>    
           p {
             color: red;
           }
           
           p, li {
             text-decoration: underline;
-          }</code>
+          }
+        </code>
     </pre>
     </section>
 
@@ -67,7 +71,7 @@
 <header>CSS Selectors</header>
 <p>In CSS, selectors are used to target the HTML elements on our web pages that we want to style. There are a wide variety of CSS selectors available, allowing for fine grained precision when selecting elements to style.</p>
 <h3>Simple Selectors</h3>
-<p>Simple selectors directly match one or more elements of a document, based on the type of element, <code>class</code>, or <code>id</code>.</p>
+<p>Simple selectors directly match one or more elements of a document, based on the type of element, <em>class</em> or <em >id</em>.</p>
 <pre>
     <code>
             /* All p elements are red */
@@ -75,7 +79,10 @@
             p {
             color: red;
             }
-
+    </code>
+</pre>
+<pre>
+    <code>
             /* All div elements are blue */
 
             div {
@@ -92,7 +99,11 @@
             .first {
             font-weight: bold;
             }
+</code>
+</pre>
 
+<pre>
+    <code>
             /* All the elements with the class "done" are strikethrough */
 
             .done {
@@ -101,25 +112,27 @@
 </code>
 </pre>
 <h3>ID Selectors</h3>
-The ID selector consists of a hash/pound symbol (#), followed by the ID name of a given element. Any element can have a unique ID name set with the id attribute. It is up to you to choose an ID name. It's the most efficient way to select a single element.
+<p>The ID selector consists of a hash/pound symbol (#), followed by the ID name of a given element. Any element can have a unique ID name set with the id attribute. It is up to you to choose an ID name. It's the most efficient way to select a single element.</p>
 
-<strong>Important:</strong> An ID name must be unique in the document. Behaviors regarding duplicated IDs are unpredictable. For example, in some browsers, only the first instance is counted, and the rest are ignored.
+<p><strong>Important:</strong> An ID name must be unique in the document. Behaviors regarding duplicated IDs are unpredictable. For example, in some browsers, only the first instance is counted, and the rest are ignored. </p>
 
 <pre>
     <code>
             #polite {
             font-family: cursive;
             }
-            
+     </code>
+</pre> 
+<pre>
+    <code>      
             #rude {
             font-family: monospace;
             text-transform: uppercase;
             }
     </code>
-
 </pre>
 <h3>Pseudo-Classes</h3>
-<p>A CSS pseudo-class is a keyword added to the end of a selector, preceded by a colon <code>(:)</code>, which is used to specify that you want to style the selected element but only when it is in a certain state. For example, you might want to style a link element only when it is being hovered over by the mouse pointer, or a checkbox when it is disabled or checked, or an element that is the first child of its parent in the DOM tree.</p>
+<p>A CSS pseudo-class is a keyword added to the end of a selector, preceded by a colon (:), which is used to specify that you want to style the selected element but only when it is in a certain state. For example, you might want to style a link element only when it is being hovered over by the mouse pointer, or a checkbox when it is disabled or checked, or an element that is the first child of its parent in the DOM tree.</p>
 <pre>
     <code>
             /* These styles will style our link in all states */
@@ -128,13 +141,19 @@ The ID selector consists of a hash/pound symbol (#), followed by the ID name of 
             color: blue;
             font-weight: bold;
             }
-
+    </code>
+</pre>
+<pre>
+    <code>
             /* We want visited links to be the same color as non-visited links */
 
             a:visited {
             color: blue;
             }
-
+        </code>
+</pre>
+<pre>
+    <code>
             /* We highlight the link when it is hovered over (mouse over), activated (mouse down) or focused (keyboard) */
 
             a:hover,
@@ -146,6 +165,7 @@ The ID selector consists of a hash/pound symbol (#), followed by the ID name of 
     </code>
 </pre>
 </section>
+
 <!-- Section 4 -->
 <section class="main-section" id="The_CSS_Box_Model">
 <header>The CSS Box Model</header>
@@ -179,7 +199,7 @@ The ID selector consists of a hash/pound symbol (#), followed by the ID name of 
 <h3>Color</h3>
 <p>The color property sets the color of the foreground content of the selected elements (which is usually the text, but can also include a couple of other things, as an underline or overline placed on text using the text-decoration property).</p>
 
-  <p><code>color</code> can accept any CSS color unit, for example:</p>
+  <p><em>color</em> can accept any CSS color unit, for example:</p>
   <pre>
       <code>
             p {
