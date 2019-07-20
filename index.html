@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <title>Technical Documentation Page - FCC Project</title>
 </head>
@@ -69,11 +71,13 @@
 <pre>
     <code>
             /* All p elements are red */
+
             p {
             color: red;
             }
 
             /* All div elements are blue */
+
             div {
             color: blue;
             }
@@ -84,11 +88,13 @@
 <pre>
 <code>
             /* The element with the class "first" is bolded */
+
             .first {
             font-weight: bold;
             }
 
             /* All the elements with the class "done" are strikethrough */
+
             .done {
             text-decoration: line-through;
             }
@@ -116,22 +122,21 @@ The ID selector consists of a hash/pound symbol (#), followed by the ID name of 
 <p>A CSS pseudo-class is a keyword added to the end of a selector, preceded by a colon <code>(:)</code>, which is used to specify that you want to style the selected element but only when it is in a certain state. For example, you might want to style a link element only when it is being hovered over by the mouse pointer, or a checkbox when it is disabled or checked, or an element that is the first child of its parent in the DOM tree.</p>
 <pre>
     <code>
-            /* These styles will style our link
-            in all states */
+            /* These styles will style our link in all states */
+
             a {
             color: blue;
             font-weight: bold;
             }
 
-            /* We want visited links to be the same color
-            as non visited links */
+            /* We want visited links to be the same color as non-visited links */
+
             a:visited {
             color: blue;
             }
 
-            /* We highlight the link when it is
-            hovered over (mouse over), activated (mouse down)
-            or focused (keyboard) */
+            /* We highlight the link when it is hovered over (mouse over), activated (mouse down) or focused (keyboard) */
+
             a:hover,
             a:active,
             a:focus {
@@ -195,11 +200,12 @@ The ID selector consists of a hash/pound symbol (#), followed by the ID name of 
   </pre>
 <p>This would make all paragraphs on a page adopt the Arial font.</p>
     </section>
+    <footer>
+        <p>Text and code examples are from <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS" target="_blank">MDN Web Docs</a>, by <a href="https://developer.mozilla.org/en-US/docs/Web/CSS$history" target="_blank">Mozilla Contributors</a>. Used here under the Creative Commons Attribution-ShareAlike license <a href="https://creativecommons.org/licenses/by-sa/2.5/" target="_blank">CC-BY-SA v2.5</a>. Visit <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Using_MDN_Web_Docs_content" target="_blank">this page</a> for additional information.</p>
+        <p>Coded by JP Luttrell</p>
+    </footer>
 </main>
-<footer>
-    <p>Text and code examples are from <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS" target="_window">MDN Web Docs</a>. Used here under the Creative Commons Attribution-ShareAlike license <a href="https://creativecommons.org/licenses/by-sa/2.5/">CC-BY-SA v2.5</a>. Visit <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Using_MDN_Web_Docs_content">this page</a> for additional information.</p>
-    <p>Coded by JP Luttrell</p>
-</footer>
+
 
 
 
